@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Chat Window</title>
+<!-- External style sheets -->
+<link rel = "stylesheet" href = "css/bootstrap.min.css">
+<link rel = "stylesheet" href = "css/chat.css">
+<!-- External script files -->
+<script type = "text/javascript" src = "scripts/jquery-1.12.2.min.js"></script>
+<script type = "text/javascript" src = "scripts/bootstrap.min.js"></script>
+<script type = "text/javascript" src = "scripts/chatscript.js"></script>
+</head>
+<body onload = "chatdetails()">
+<div class = "container-fluid">
+	<img src = "images/live-chat-icon.png" alt = "chatON" align = "middle" class = "mainHeading"></img>
+	<div class = "jumbotron chatwindow">
+	    <div id = "userDetails" class = "top"></div>
+	    <div id = "currentchat" class = "middle"></div>
+	    <div id = "typeMessage" class = "bottom">
+	    	<div class="col-xs-9">
+	    		<input type="text" name="message" id ="message" class = "form-control" placeholder = "Enter your message"/>
+	    	</div>
+	    	<a href="#" class="btn btn-info btn-md" onclick = "sendmessage()">
+          		<span class="glyphicon glyphicon-circle-arrow-right"></span> Send
+        	</a>
+	    </div>
+	</div>
+	
+</div>
+</body>
+</html>
